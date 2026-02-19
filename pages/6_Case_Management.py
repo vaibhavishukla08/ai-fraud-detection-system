@@ -1,30 +1,24 @@
 import streamlit as st
-from database.db_connection import get_connection
+import pandas as pd
 
 st.header("📁 Case Management")
 
-conn = get_connection()
-cursor = conn.cursor()
+# Demo data (cloud-safe)
+cases = [
+    {"Case ID": 101, "Status": "Open"},
+    {"Case ID": 102, "Status": "Investigating"},
+    {"Case ID": 103, "Status": "Resolved"},
+]
 
-cursor.execute("SELECT case_id, status FROM cases ORDER BY created_at DESC;")
-cases = cursor.fetchall()
+df = pd.DataFrame(cases)
 
-for case in cases:
-    case_id, status = case
+for index, row in df.iterrows():
+    col1, col2 = st.columns([1, 2])
 
-    col1, col2 = st.columns([1,2])
-
-    col1.write(f"Case #{case_id}")
+    col1.write(f"Case #{row['Case ID']}")
 
     new_status = col2.selectbox(
         "Update Status",
         ["Open", "Investigating", "Resolved"],
-        index=["Open","Investigating","Resolved"].index(status),
-        key=case_id
+        index=["Open", "Investigating", "Resolved"].index
     )
-
-    if new_status != status:
-        cursor.execute("UPDATE cases SET status=%s WHERE case_id=%s", (new_status, case_id))
-        conn.commit()
-
-conn.close()
