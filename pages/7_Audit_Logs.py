@@ -1,14 +1,15 @@
 import streamlit as st
-from database.db_connection import get_connection
+import pandas as pd
 
 st.header("📜 Audit Logs")
 
-conn = get_connection()
-cursor = conn.cursor()
+# Demo data (cloud-safe)
+logs = [
+    {"Action": "Email Scan", "User": "Vaibhavi", "Result": "High"},
+    {"Action": "Website Check", "User": "Vaibhavi", "Result": "Medium"},
+    {"Action": "Deepfake Detection", "User": "Vaibhavi", "Result": "Low"},
+]
 
-cursor.execute("SELECT action, user_name, result, created_at FROM audit_logs ORDER BY created_at DESC;")
-logs = cursor.fetchall()
+df = pd.DataFrame(logs)
 
-conn.close()
-
-st.dataframe(logs)
+st.table(df)
