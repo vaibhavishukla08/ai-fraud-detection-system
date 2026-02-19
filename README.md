@@ -92,9 +92,9 @@ streamlit run app.py
 
 Developed by:
 
-- Sneha
-- Riya
-- Somya
+- Sneha Singh
+- Riya Agarwal
+- Somya Jain
 - Vaibhavi Shukla
   
 
