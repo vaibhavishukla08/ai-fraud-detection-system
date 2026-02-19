@@ -1,3 +1,6 @@
+## 🌐 Live Demo
+https://ai-fraud-detection-system-xykfsmoowjmvbtq87sj3km.streamlit.app/
+
 # 🛡 AI Shield – Intelligent Fraud Detection System  
 
 ## 📌 Overview  
