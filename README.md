@@ -1,26 +1,26 @@
-## 🌐 Live Demo
+#Live Demo
 https://ai-fraud-detection-system-xykfsmoowjmvbtq87sj3km.streamlit.app/
 
 # 🛡 AI Shield – Intelligent Fraud Detection System  
 
-## 📌 Overview  
+##  Overview  
 AI Shield is a machine learning–powered fraud detection system designed to identify and prevent digital fraud activities such as phishing emails, malicious websites, deepfake threats, and suspicious transactions.  
 
 The system provides real-time risk assessment through an interactive and user-friendly Streamlit dashboard.
 
 ---
 
-## 🚀 Key Features  
+##  Key Features  
 
-- 📧 **Email Phishing Detection** – Detects suspicious patterns in email content using NLP techniques  
-- 🌐 **Malicious Website Analysis** – Identifies harmful URLs using machine learning models  
-- 🎭 **Deepfake Detection** – Flags potentially manipulated media content  
-- 📊 **Risk Scoring System** – Generates confidence-based fraud probability scores  
-- 📈 **Interactive Dashboard** – Clean, responsive multi-page UI built with Streamlit  
+- **Email Phishing Detection** – Detects suspicious patterns in email content using NLP techniques  
+-  **Malicious Website Analysis** – Identifies harmful URLs using machine learning models  
+-  **Deepfake Detection** – Flags potentially manipulated media content  
+- **Risk Scoring System** – Generates confidence-based fraud probability scores  
+-  **Interactive Dashboard** – Clean, responsive multi-page UI built with Streamlit  
 
 ---
 
-## 🏗 Project Structure  
+##  Project Structure  
 
 ```
 backend/        → Core ML models & detection logic  
@@ -33,7 +33,7 @@ requirements.txt → Project dependencies
 
 ---
 
-## 🛠 Tech Stack  
+##  Tech Stack  
 
 - **Programming Language:** Python  
 - **Frontend:** Streamlit  
@@ -45,29 +45,29 @@ requirements.txt → Project dependencies
 
 ## ⚙ Installation & Setup  
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 ```bash
 git clone https://github.com/vaibhavishukla08/ai-fraud-detection-system.git
 ```
 
-### 2️⃣ Navigate to Project Folder
+### 2️ Navigate to Project Folder
 ```bash
 cd ai-fraud-detection-system
 ```
 
-### 3️⃣ Install Dependencies
+### 3️ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Run the Application
+### 4️ Run the Application
 ```bash
 streamlit run app.py
 ```
 
 ---
 
-## 📊 Applications  
+##  Applications  
 
 - Banking & FinTech fraud monitoring  
 - Email security systems  
@@ -76,7 +76,7 @@ streamlit run app.py
 
 ---
 
-## 🔮 Future Enhancements  
+##  Future Enhancements  
 
 - Real-time API integration  
 - Advanced deep learning model training  
@@ -85,5 +85,17 @@ streamlit run app.py
 - CI/CD integration  
 
 ---
- 
+
+ ---
+
+## Team
+
+Developed by:
+
+- Sneha
+- Riya
+- Somya
+- Vaibhavi Shukla
+  
+
 GitHub: https://github.com/vaibhavishukla08  
