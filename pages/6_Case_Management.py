@@ -17,8 +17,14 @@ for index, row in df.iterrows():
 
     col1.write(f"Case #{row['Case ID']}")
 
+    status_options = ["Open", "Investigating", "Resolved"]
+
     new_status = col2.selectbox(
         "Update Status",
-        ["Open", "Investigating", "Resolved"],
-        index=["Open", "Investigating", "Resolved"].index
+        status_options,
+        index=status_options.index(row["Status"]),
+        key=row["Case ID"]
     )
+
+    if new_status != row["Status"]:
+        st.success(f"Status updated to {new_status} (Demo Mode)")
