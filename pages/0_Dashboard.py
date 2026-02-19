@@ -5,17 +5,18 @@ from database.db_connection import get_connection
 st.header("📊 Threat Intelligence Dashboard")
 st.divider()
 st.subheader("📊 Threat Distribution Overview")
+# conn = get_connection()
+# cursor = conn.cursor()
+# cursor.execute("SELECT severity, COUNT(*) FROM threat_scans GROUP BY severity")
+# data = cursor.fetchall()
+# conn.close()
+data = [
+    ("Low", 12),
+    ("Medium", 8),
+    ("High", 3)
+]
 
-conn = get_connection()
-cursor = conn.cursor()
 st.caption("Real-time AI-based multi-channel threat monitoring system.")
-
-# metrics queries here...
-
-# distribution query
-cursor.execute("SELECT severity, COUNT(*) FROM threat_scans GROUP BY severity;")
-data = cursor.fetchall()
-conn.close()
 
 df = pd.DataFrame(data, columns=["Severity", "Count"])
 
