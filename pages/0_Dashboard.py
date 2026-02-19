@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from database.db_connection import get_connection
+
 
 st.header("📊 Threat Intelligence Dashboard")
 st.divider()
